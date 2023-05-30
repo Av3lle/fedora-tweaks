@@ -1,8 +1,9 @@
 import subprocess
 import os 
+from current_dir import dir
 
 os.system('clear')
-script_path = "~/fedora-tweaks/fedora.sh"
+script_path = dir
 
 
 def mirrors():
