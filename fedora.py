@@ -2,8 +2,8 @@ import subprocess
 import os 
 
 os.system('clear')
-#script_path = "~/fedora_tweaks/fedora.sh"
-script_path = "/mnt/a5e87629-9651-433c-b7dd-3aec41b36b7c/code/Python/qt/fedora_tweaks/fedora.sh"
+script_path = "~/fedora-tweaks/fedora.sh"
+
 
 def mirrors():
   subprocess.call(["bash", script_path, "mirrors"])
@@ -59,6 +59,7 @@ while True:
   10 - Отключение ненужных служб   11 - Добавление алиасов   12 - Загрузка расширений для Gnome
   13 - Настройка firewall   14 - Очистка DNF
   15 - Выполнить все пункты
+  16 - Завершить скрипт
 
 
   Выберите действие: '''))
@@ -94,29 +95,8 @@ while True:
       system_upgrade_clean()
     case 15:
       all_tweaks()
+    case 16:
+      break
     case _:
       print("Ошибка!")
       subprocess.call(["bash", script_path, "waitt"])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
